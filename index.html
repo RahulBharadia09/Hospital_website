@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- responsive link -->
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat+Subrayada&display=swap"
+        rel="stylesheet">
+
+    <title>Doctor</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <!-- Starting of navbar -->
+        <div class="row  header_wrapper">
+            <div class="col-12">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light m-0">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="./images/brand.png" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse  justify-content-end py-1" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item px-2">
+                                    <a class="nav-link " href="#home">Home</a>
+                                </li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link" href="#appointment">Appointment</a>
+                                </li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link" href="#doctor">Doctor</a>
+                                </li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link" href="#services">Services</a>
+                                </li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link" href="#news">News</a>
+                                </li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link" href="#department">Department</a>
+                                </li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link" href="#contact">Contact </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!--end of navbar col-12-->
+        </div>
+        <!--end of navbar row-->
+        <!-- ending of navbar -->
+
+
+
+        <!-- starting of carousal -->
+        <div class="row" id="home">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./images/herosection.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block ranking ">
+
+                            <h6 class="text-dark">Ranked #1 as</h6>
+                            <h1 class="text-dark">THE BEST HOSPITAL</h1>
+                            <p class="text-dark">Get the best professional medical help from our modern hospital</p>
+                            <button type="button" class="btn btn-success p-2 px-3">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./images/herosection1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of carousal row-->
+        <!-- ending of carousal -->
+
+
+
+        <!-- starting of Appointment -->
+        <div class="row  justify-content-evenly  text-white section bg-blue" id="appointment">
+            <div class=" col-12 col-md-12 col-lg-4 ">
+                <h3 class="text-white fw-bolder">Check Schedule</h3>
+                <div class="col-12 col-md-5  col-lg-12 p-1">
+                    <label for="departmentname" class="form-label">Department's Name</label>
+                    <select id="departmentname" class="form-select">
+                        <option selected>Choose a Department</option>
+                        <option>Cardiology</option>
+                        <option>Dental</option>
+                        <option>Neurology</option>
+                        <option>Pediatric</option>
+                        <option>Traumotology</option>
+                        <option>Xray</option>
+                    </select>
+                </div>
+
+                <div class="col-12 col-md-5 col-lg-12  p-1 ">
+                    <label for="doctorname" class="form-label">Doctor Name</label>
+                    <select id="doctorname" class="form-select">
+                        <option selected>Doctor Name</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <button type="button" class="btn btn-danger mt-2 py-2 px-4">View Schedule</button>
+                </div>
+            </div>
+
+
+            <div class=" col-12 mt-3  col-lg-6 pb-3">
+                <h3 class="text-white fw-bolder">BOOK APPOINTMENT</h3>
+                <form class="row g-3">
+
+                    <div class="col-12 col-md-5 col-lg-4 ">
+                        <label for="patientname" class="form-label">Patient Name</label>
+                        <input type="name" class="form-control" id="patientname">
+                    </div>
+                    <div class=" col-12 col-md-5 col-lg-4">
+                        <label for="phonenumber" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="phonenumber">
+                    </div>
+                    <div class=" col-12 col-md-5 col-lg-4">
+                        <label for="emailaddress" class="form-label">Email-Address</label>
+                        <input type="email" class="form-control" id="emailaddress">
+                    </div>
+
+                    <div class="col-12 col-md-5 col-lg-4">
+                        <label for="date" class="form-label">Choose Date</label>
+                        <input type="date" class="form-control" id="inputAddress2"
+                            placeholder="Apartment, studio, or floor">
+                    </div>
+
+                    <div class=" col-12  col-md-6 col-lg-4 ">
+                        <label for="departmentname" class="form-label">Department's Name</label>
+                        <select id="departmentname" class="form-select">
+                            <option selected>Choose a Department</option>
+                            <option>Cardiology</option>
+                            <option>Dental</option>
+                            <option>Neurology</option>
+                            <option>Pediatric</option>
+                            <option>Traumotology</option>
+                            <option>Xray</option>
+                        </select>
+                    </div>
+
+
+                    <div class=" col-md-12 col-lg-4 mt-5">
+                        <label for=""></label>
+                        <button type="button" class="btn btn-success mt-1 py-1 px-5">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-12 text-center  fw-bolder text-white mt-5">
+                <h3 class="text-white fw-bold">Please fill out all of the fields correctly. Your records will be saved
+                    in our database securely.
+                </h3>
+            </div>
+
+        </div>
+        <!--end of row-->
+        <!-- ending of Appointment -->
+
+
+        <!-- starting of our doctor -->
+        <div class="row section text-center " id="doctor">
+            <div class="col-12">
+                <h2>OUR DOCTORS</h2>
+                <h6>Our doctors are specialized in their field and have more than 10 years of experiences.</h6>
+            </div>
+
+            <div class="row pt-4  justify-content-evenly">
+                <div class=" col-12 col-md-5 col-lg-3">
+                    <div class="card text-start border-0">
+                        <img src="images/doctor1.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-info">Dr.Veranda Tanumihardja</h3>
+                            <h5 class="card-title">Pulmonary</h5>
+                            <p class="card-text lead">Veranda was born and raised in Jakarta, Indonesia. He graduated
+                                from the University of...</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-5 col-lg-3 ">
+                    <div class="card text-start border-0">
+                        <img src="images/doctor2.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-info">Dr. Kathryn Wood</h3>
+                            <h5 class="card-title">Pulmonary</h5>
+                            <p class="card-text lead">Kathryn was born and raised in Indonesia, North Way Indonesia He
+                                graduated from the University...</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-5 col-lg-3">
+                    <div class="card text-start border-0">
+                        <img src="images/doctor3.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-info">Dr. Hooman Azmi</h3>
+                            <h5 class="card-title">Dental</h5>
+                            <p class="card-text lead">Hooman was born and raised in Indonesia, North Way Indonesia He
+                                graduated from the University...</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-12 col-md-5 col-lg-3">
+                    <div class="card text-start border-0">
+                        <img src="images/doctor4.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-info">Dr. Peter Parker</h3>
+                            <h5 class="card-title">Neurologist</h5>
+                            <p class="card-text lead">Parker was born and raised in UK, North Way Australia He graduated
+                                from the University of...</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--ending of row-->
+        <!-- ending of our Doctor -->
+
+
+
+        <!-- starting of testinomial -->
+        <div class="row justify-content-evenly">
+            <div class="col-12 text-center pb-2 section">
+                <h2>TESTIMONIALS</h2>
+            </div>
+            <div class="col-4">
+                <div class="owl-carousel owl-theme text-center py-2">
+                    <div class="item ">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <p class="card-text lead">The doctors and nurses and aides were super duper helpful. I
+                                    really really appreciate all your kindness and good care you have provide me with.
+                                    Thank you so much!</p>
+                                <h3>Martha Stewart</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card  border-0">
+                            <div class="card-body">
+                                <p class="card-text lead">The doctors and nurses and aides were super duper helpful. I
+                                    really really appreciate all your kindness and good care you have provide me with.
+                                    Thank you so much!</p>
+                                <h3>Martha Stewart</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 ">
+                            <div class="card-body">
+                                <p class="card-text lead">The doctors and nurses and aides were super duper helpful. I
+                                    really really appreciate all your kindness and good care you have provide me with.
+                                    Thank you so much!</p>
+                                <h3>Martha Stewart</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 ">
+                            <div class="card-body">
+                                <p class="card-text lead">The doctors and nurses and aides were super duper helpful. I
+                                    really really appreciate all your kindness and good care you have provide me with.
+                                    Thank you so much!</p>
+                                <h3>Martha Stewart</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card  border-0">
+                            <div class="card-body">
+                                <p class="card-text lead">The doctors and nurses and aides were super duper helpful. I
+                                    really really appreciate all your kindness and good care you have provide me with.
+                                    Thank you so much!</p>
+                                <h3>Martha Stewart</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 ">
+                            <div class="card-body">
+                                <p class="card-text lead">The doctors and nurses and aides were super duper helpful. I
+                                    really really appreciate all your kindness and good care you have provide me with.
+                                    Thank you so much!</p>
+                                <h3>Martha Stewart</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ending of testinomial -->
+        </div>
+        <!--ending of testinomial-->
+
+
+        <!-- starting of Services -->
+        <div class="row section " id="services">
+            <div class="col-12 text-center">
+                <h2>Our Services</h2>
+            </div>
+
+            <div class="row pt-4  justify-content-evenly">
+                <div class=" col-12 col-md-5 col-lg-3">
+                    <div class="card text-start border-0">
+                        <img src="images/services1.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-info py-1">Nephrologist Care
+                            </h3>
+                            <p class="card-text lead pb-1">Tell me why, I love you like I do. Tell me who, could stop
+                                my...</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-5 col-lg-3 ">
+                    <div class="card text-start border-0">
+                        <img src="images/services2.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-info py-1">Eye Care</h3>
+                            <p class="card-text lead pb-1">Well we're movin' on up, to the east side. To a deluxe
+                                apartment in the...</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-5 col-lg-3">
+                    <div class="card text-start border-0">
+                        <img src="images/services3.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-info py-1">Pediatrician Clinic</h5>
+                            <p class="card-text lead  pb-1">Hooman was born and raised in Indonesia, North Way Indonesia
+                                He graduated from the University...</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-12 col-md-5 col-lg-3">
+                    <div class="card text-start border-0">
+                        <img src="images/services4.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-info py-1">Prenatal Care</h5>
+                            <p class="card-text lead  pb-1">In an age when nature and magic rule the world, there is an
+                                extraordinary legend:...</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ending of Services -->
+
+
+        <!-- starting of news -->
+        <div class="row section text-center " id="news">
+            <div class="col-12">
+                <h2>Latest News</h2>
+                <h6>Latest up-to-date information from our public relation department.</h6>
+            </div>
+
+            <div class="row pt-4  justify-content-evenly">
+                <div class=" col-12 col-md-5 col-lg-3">
+                    <div class="card text-start border-0">
+                        <img src="images/news1.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title  text-info py-1">Health checks for babies</h3>
+                            <p class="card-text lead pb-1">Somewhere out in space live The Herculoids! Zok, the
+                                laser-ray
+                                dragon! Igoo, the giant rock ape!...</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-5 col-lg-3 ">
+                    <div class="card text-start border-0">
+                        <img src="images/news2.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-info py-1">Accredited surgical facility</h3>
+                            <p class="card-text lead pb-1">Since the dawn of time, there has been a process to
+                                developing web
+                                presentations - you...</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-5 col-lg-3">
+                    <div class="card text-start border-0">
+                        <img src="images/news3.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-info py-1">The Three Musketeers Surgical Team</h3>
+                            <p class="card-text lead pb-1">One thousand years ago, superstition and the sword ruled. It
+                                was a
+                                time of darkness. It....</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-12 col-md-5 col-lg-3">
+                    <div class="card text-start border-0">
+                        <img src="images/news4.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-info py-1">Together we can do so much</h3>
+                            <p class="card-text lead pb-1">Chosen from among all others by the Immortal Elders -
+                                Solomon,
+                                Hercules, Atlas, Zeus, Achilles, Mercury...</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--ending of row-->
+        <!-- ending of news -->
+
+
+        <!-- starting of PHILOSOPHY -->
+        <div class="card mb-3 bg-blue text-white section text-start">
+            <div class="row g-0">
+                <div class="col-md-5 px-3">
+                    <img src="images/phyliosophy.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h4 class="card-title pb-3 text-white">OUR PHILOSOPHY</h4>
+                        <p class="card-text pt-1 text-white lead fw-bold">This is the subtitle for the heading </p>
+                        <p class="card-text pt-1 text-white lead fw-bold">Patients have an important role to play at
+                            each stage of their care
+                            and the five safety tips will serve to encourage them to be more involved in their health
+                            care. </p>
+                        <p class="card-text pt-1 text-white lead fw-bold">Patients can do a lot of small things to
+                            make their health-care
+                            experience as safe as possible.</p>
+                        <p class="card-text pt-1 text-white lead fw-bold">Hospitals are places of recovery and healing
+                            but there are also safety
+                            risks for patients, such as infections, falls and medication errors that can happen despite
+                            our best efforts.</p>
+                        <button type="button" class="btn btn-danger mt-2 py-2 px-4"> Learn More</button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ending of PHILOSOPHY -->
+
+        <!-- Starting OD Department -->
+        <div class="row section" id="department">
+            <div class="col-12 text-center">
+                <h2>HOSPITAL DEPARTMENTS</h2>
+            </div>
+
+            <div class="row pt-4  justify-content-evenly">
+                <div class=" col-12 col-md-5 col-lg-3">
+                    <div class="card text-start border-0">
+                        <img src="images/depart1.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-info py-1">Cardiology</h3>
+                            <p class="card-text lead pb-1">Here's the story of a lovely lady, who was bringing up three
+                                very lovely...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-5 col-lg-3 ">
+                    <div class="card text-start border-0">
+                        <img src="images/depart2.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-info py-1">Dental</h3>
+                            <p class="card-text lead pb-1">We never thought of findin' a place where we belong. Don't
+                                have to stand...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-5 col-lg-3">
+                    <div class="card text-start border-0">
+                        <img src="images/depart3.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-info py-1">Neurologist</h3>
+                            <p class="card-text lead  pb-1">You unlock this door with the key of imagination. Beyond it
+                                is another dimension:..</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-12 col-md-5 col-lg-3">
+                    <div class="card text-start border-0">
+                        <img src="images/depart4.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-info py-1">Pediatric</h3>
+                            <p class="card-text lead  pb-1">One thousand years ago, superstition and the sword ruled. It
+                                was a time of....</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-5 col-lg-3">
+                    <div class="card text-start border-0">
+                        <img src="images/depart5.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-info py-1">Pulmonary</h3>
+                            <p class="card-text lead  pb-1">Life is like a hurricane here in Duckburg. Race cars,
+                                lasers, aeroplanes - it's....</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-12 col-md-5 col-lg-3">
+                    <div class="card text-start border-0">
+                        <img src="images/depart6.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-info py-1">Traumatology</h3>
+                            <p class="card-text lead  pb-1">Your tread must be light and sure, as though your path were
+                                upon rice..</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-12 col-md-5 col-lg-3">
+                    <div class="card text-start border-0">
+                        <img src="images/depart7.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-info py-1">Urology</h3>
+                            <p class="card-text lead  pb-1">They're creepy and they're kooky, mysterious and spooky.
+                                They're all together ooky, the Addams.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-12 col-md-5 col-lg-3">
+                    <div class="card text-start border-0">
+                        <img src="images/depart8.jpg" class="card-img-top cardimage" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-info py-1">Xray</h3>
+                            <p class="card-text lead  pb-1">I bet we been together for a million years, And I bet we'll
+                                be...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- ending of department -->
+
+        <!-- starting of information -->
+        <div class="row justify-content-center section bg-dark" id="contact">
+            <div class="col-3 ">
+                <h2 class="text-white">Hospital</h2>
+                <p>My kinda people, my kinda place. There's something special about this place.</p>
+                <p>Hospital+
+                    33 Farlane Street +123 655 655
+                    Keilor East +123 655 655
+                    VIC 3033, Australia medico@mail.com
+                </p>
+            </div>
+
+            <div class="col-4">
+                <h3 class="text-white">LATEST POSTS</h3>
+                <p>Together we can do so much April 8, 2021</p>
+                <p>The Three Musketeers Surgical Team April 8, 2021</p>
+                <p>Accredited surgical facility April 8, 2021</p>
+                <p>Health checks for babies April 8, 2021</p>
+            </div>
+
+            <div class="col-3">
+                <h3 class="fw-bold text-white">CHECK SCHEDULES</h3>
+                <div class="col-12 pt-2 p-1 px-2">
+                    <input type="text" name="name" class="text-center py-1" id="name" placeholder="Your full name ">
+                </div>
+                <div class="col-12 pt-3 p-1 px-2 ">
+                    <input type="email" id="email" class="text-center py-1 " placeholder="Email">
+                </div>
+                <button type="button" class="btn btn-info mt-2 py-2 px-4 text-center px-4">Subscribed</button>
+
+            </div>
+        </div>
+        <!-- ending of information -->
+
+        <!-- footer  -->
+        <div class="row">
+            <div class="col-12 text-center py-1 bg-white ">
+                <h3 class="text-dark">&copy 2022 Hospital Plus <span class="text-success">Designed BY Rahul Bharadia
+                    </span> </h3>
+                <h3></h3>
+            </div>
+        </div>
+        <!-- ending of footer  -->
+
+        
+    </div>
+    <!--end of contianer fluid-->
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+
+    <!-- owl-carousel -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+
+
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

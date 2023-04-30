@@ -1,0 +1,12 @@
+@media only screen and (min-width:768px) {
+   
+
+    h1 {
+        font-size: 35px;
+        line-height: 20px;
+        font-weight: 800px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+}
